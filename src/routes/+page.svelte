@@ -1,9 +1,10 @@
 <main class="text-center flex items-center justify-center h-screen">
 	<div class="m-10 max-w-screen-md mt-[calc(61.8vh-254px/2)]">
-		<form class="border rounded-full border-gray-400 py-3 px-5 flex mb-16">
+		<form class="border rounded-full border-gray-400 py-3 px-5 flex mb-16" action="results">
 			<input
 				type="text"
 				class="flex-grow outline-none text-center placeholder:text-gray-300"
+				enterkeyhint="search"
 				autofocus
 			/>
 		</form>
