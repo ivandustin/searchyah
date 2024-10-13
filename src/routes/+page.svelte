@@ -1,4 +1,4 @@
-<main class="text-center flex items-center justify-center h-screen bg-gray-50">
+<main class="text-center flex items-center justify-center h-screen">
 	<div class="m-10 max-w-screen-md mt-[calc(61.8vh-224px/2)]">
 		<form class="rounded-full p-3 flex mb-16 shadow bg-white" action="results">
 			<svg
