@@ -1,14 +1,10 @@
-import { get as getRefs } from '$lib/reference/get';
-import { toRecord } from '$lib/reference/toRecord';
+import { get } from '$lib/reference/verse/get';
 
 export async function load({ fetch, url }) {
-	const query = url.searchParams.get('query');
-	let references = [];
+	let query = url.searchParams.get('query');
 	if (query) {
-		try {
-			references = await getRefs(fetch, query);
-		} catch {}
+		const verses = await get(fetch, query);
+		return { verses };
 	}
-	const results = references.map(toRecord);
-	return { results };
+	throw new Error('Invalid query');
 }

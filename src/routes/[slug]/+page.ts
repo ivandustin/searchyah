@@ -1,4 +1,4 @@
-import { parse } from '$lib/reference/slug/parse';
+import { parse } from '$lib/reference/chapter/slug/parse';
 import kjv from '$lib/data/kjv.json';
 
 const data: any = kjv;

@@ -1,9 +1,9 @@
 <main class="text-center flex items-center justify-center h-screen">
 	<div class="m-10 max-w-screen-md mt-[calc(61.8vh-224px/2)]">
-		<form class="rounded-full p-3 flex mb-16 shadow bg-white border" action="results" method="GET">
+		<form class="rounded-lg p-3 flex mb-16 bg-gray-100" action="results" method="GET">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-6 w-6 text-gray-400"
+				class="h-6 w-6 text-gray-500"
 				stroke="currentColor"
 				viewBox="0 0 24 24"
 				stroke-width="2"
@@ -16,7 +16,7 @@
 				/>
 			</svg>
 			<input
-				class="flex-grow outline-none bg-transparent placeholder:text-gray-300 mx-2"
+				class="flex-grow outline-none bg-transparent placeholder:text-gray-500 mx-2"
 				enterkeyhint="search"
 				placeholder="Search"
 				type="search"

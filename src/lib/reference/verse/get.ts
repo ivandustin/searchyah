@@ -1,5 +1,5 @@
+import { parse } from '$lib/reference/verse/parse';
 import { PUBLIC_API } from '$env/static/public';
-import { parse } from '$lib/reference/parse';
 
 export async function get(fetch: any, query: string) {
 	let response = await fetch(`${PUBLIC_API}?q=${query}`);

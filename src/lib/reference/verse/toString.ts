@@ -1,6 +1,7 @@
-import { toTitle } from './toTitle';
+import type { Verse } from '$lib/types/verse';
+import { toTitle } from '../book/toTitle';
 
-export function toString(reference: any) {
+export function toString(reference: Verse) {
 	const title = toTitle(reference);
 	const chapter = reference.chapter + 1;
 	const verse = reference.verse + 1;
