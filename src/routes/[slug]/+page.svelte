@@ -4,14 +4,14 @@
 </script>
 
 <main class="m-5 font-serif leading-10 text-2xl">
-	{#each data.records as record}
+	{#each data.items as item}
 		<p
-			id={record.verse}
+			id={item.verse}
 			class="my-3 p-5 rounded-lg"
-			class:bg-gray-100={$page.url.hash == `#${record.verse}`}
+			class:bg-gray-100={$page.url.hash == item.fragment}
+			class:dark:bg-gray-700={$page.url.hash == item.fragment}
 		>
-			<sup class="font-sans text-xs select-none text-gray-400">{record.verse}&nbsp;</sup
-			>{record.text}
+			<sup class="font-sans text-xs select-none text-gray-400">{item.verse}&nbsp;</sup>{item.text}
 		</p>
 	{/each}
 </main>

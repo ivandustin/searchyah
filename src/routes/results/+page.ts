@@ -1,3 +1,4 @@
+import { toFragment } from '$lib/reference/verse/toFragment';
 import { toString } from '$lib/reference/verse/toString';
 import { toSlug } from '$lib/reference/chapter/toSlug';
 import { toText } from '$lib/reference/verse/toText';
@@ -12,7 +13,8 @@ export async function load({ fetch, url }) {
 			const text = toText(verse);
 			const reference = toString(verse);
 			const slug = toSlug(verse);
-			const href = `${slug}#${verse.verse + 1}`;
+			const fragment = toFragment(verse);
+			const href = slug + fragment;
 			return { text, reference, href };
 		});
 		return { items };
