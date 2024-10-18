@@ -1,7 +1,7 @@
 <main class="text-center flex items-center justify-center h-screen">
 	<div class="m-10 max-w-screen-md mt-[calc(61.8vh-224px/2)]">
 		<form
-			class="rounded-lg p-3 flex mb-16 bg-gray-100 dark:bg-gray-700"
+			class="rounded-[calc(48px/1.618/1.618)] p-3 flex mb-16 bg-gray-100 dark:bg-gray-700"
 			action="results"
 			method="GET"
 		>
