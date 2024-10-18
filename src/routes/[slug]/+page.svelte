@@ -3,6 +3,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>{data.title}</title>
+</svelte:head>
+
 <main class="m-5 font-serif leading-10 text-2xl">
 	{#each data.items as item}
 		<p

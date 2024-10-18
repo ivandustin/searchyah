@@ -17,7 +17,7 @@ export async function load({ fetch, url }) {
 			const href = slug + fragment;
 			return { text, reference, href };
 		});
-		return { items };
+		return { query, items };
 	}
 	throw new Error('Invalid query');
 }

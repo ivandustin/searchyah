@@ -2,6 +2,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>{data.query}</title>
+</svelte:head>
+
 <main class="m-10">
 	{#each data.items as item}
 		<div class="my-20">
