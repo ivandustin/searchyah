@@ -51,6 +51,7 @@
 			<input
 				class="flex-grow outline-none bg-transparent placeholder:text-gray-500 mx-2"
 				enterkeyhint="search"
+				autocapitalize="off"
 				placeholder="Search"
 				type="search"
 				name="query"
