@@ -9,7 +9,11 @@
 
 <main class="text-center flex items-center justify-center h-screen">
 	<div class="m-10 max-w-screen-md mt-[calc(61.8vh-224px/2-96px)]">
-		<div class="h-8 transition-opacity duration-1000" class:opacity-0={!submitted} role="status">
+		<div
+			class="h-8 transition-opacity duration-1000 delay-1000"
+			class:opacity-0={!submitted}
+			role="status"
+		>
 			<svg
 				class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-500 fill-blue-500 mx-auto"
 				xmlns="http://www.w3.org/2000/svg"
