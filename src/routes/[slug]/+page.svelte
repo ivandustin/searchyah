@@ -13,7 +13,7 @@
 			id={item.verse}
 			class="my-3 p-5 rounded-lg"
 			class:bg-gray-100={$page.url.hash == item.fragment}
-			class:dark:bg-gray-700={$page.url.hash == item.fragment}
+			class:dark:bg-gray-800={$page.url.hash == item.fragment}
 		>
 			<sup class="font-sans text-xs select-none text-gray-400">{item.verse}&nbsp;</sup>{item.text}
 		</p>
