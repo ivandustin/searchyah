@@ -7,9 +7,13 @@
 	}
 </script>
 
-<main class="text-center flex items-center justify-center h-screen">
-	<div class="m-10 max-w-screen-md mt-[calc(61.8vh-224px/2-96px)]">
-		<div class="h-8 transition-opacity duration-300" class:opacity-0={!submitted} role="status">
+<main class="mx-auto mt-[61.8vh] max-w-screen-md">
+	<div class="mx-10 relative">
+		<div
+			class="transition-opacity duration-300 absolute -top-20 w-full"
+			class:opacity-0={!submitted}
+			role="status"
+		>
 			<svg
 				class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-500 fill-blue-500 mx-auto"
 				xmlns="http://www.w3.org/2000/svg"
@@ -27,10 +31,9 @@
 					fill="currentFill"
 				/>
 			</svg>
-			<span class="sr-only">Loading...</span>
 		</div>
 		<form
-			class="rounded-[calc(48px/1.618/1.618)] p-3 flex my-16 bg-gray-100 dark:bg-gray-700"
+			class="rounded-[calc(48px/1.618/1.618)] p-3 flex bg-gray-100 dark:bg-gray-700"
 			on:submit={onSubmit}
 			action="results"
 			method="GET"
@@ -51,9 +54,9 @@
 			</svg>
 			<input
 				class="flex-grow outline-none bg-transparent placeholder:text-gray-500 mx-2"
+				placeholder="bible search"
 				enterkeyhint="search"
 				autocapitalize="off"
-				placeholder="Search"
 				readonly={submitted}
 				type="search"
 				name="query"
@@ -61,8 +64,5 @@
 				required
 			/>
 		</form>
-		<h2 class="text-xs w-3/5 m-auto leading-7 text-gray-400">
-			Search the Bible in your language, and you'll get results in the King James Version (KJV).
-		</h2>
 	</div>
 </main>
