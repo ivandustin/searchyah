@@ -10,7 +10,7 @@
 	{#each data.items as item}
 		<a
 			href={item.href}
-			class="block p-5 my-10 rounded-lg dark:hover:bg-gray-900 hover:bg-gray-50 transition"
+			class="block p-5 my-10 rounded-lg dark:lg:hover:bg-gray-900 lg:hover:bg-gray-50 transition"
 		>
 			<p class="mb-5 text-blue-500 tracking-widest">
 				{item.reference}
