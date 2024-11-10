@@ -2,7 +2,11 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {},
+		extend: {
+			transitionDuration: {
+				DEFAULT: '200ms'
+			}
+		},
 		fontFamily: {
 			serif: ['Radley', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
 			sans: [

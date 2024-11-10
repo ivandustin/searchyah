@@ -16,7 +16,7 @@
 			method="GET"
 		>
 			<div class="h-6 w-6 relative">
-				<div class="absolute transition-opacity duration-300" class:opacity-0={submitted}>
+				<div class="absolute transition" class:opacity-0={submitted}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6 text-gray-500"
@@ -32,7 +32,7 @@
 						/>
 					</svg>
 				</div>
-				<div class="absolute transition-opacity duration-300" class:opacity-0={!submitted}>
+				<div class="absolute transition" class:opacity-0={!submitted}>
 					<svg
 						class="h-6 w-6 text-gray-300 animate-spin dark:text-gray-500 fill-blue-500 mx-auto"
 						xmlns="http://www.w3.org/2000/svg"
