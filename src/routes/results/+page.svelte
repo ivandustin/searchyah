@@ -6,10 +6,13 @@
 	<title>{data.query}</title>
 </svelte:head>
 
-<main class="m-10">
+<main class="m-5">
 	{#each data.items as item}
-		<a href={item.href} class="block my-20">
-			<p class="my-5 text-blue-500 tracking-widest">
+		<a
+			href={item.href}
+			class="block p-5 my-10 rounded-lg dark:hover:bg-gray-900 hover:bg-gray-50 transition-bg duration-300"
+		>
+			<p class="mb-5 text-blue-500 tracking-widest">
 				{item.reference}
 			</p>
 			<p class="font-serif leading-10 text-2xl">{item.text}</p>
