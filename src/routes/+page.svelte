@@ -7,6 +7,10 @@
 	}
 </script>
 
+<svelte:head>
+	<meta name="description" content="You can search for anything in the Bible like Google." />
+</svelte:head>
+
 <main class="mx-auto mt-[61.8vh] max-w-screen-md">
 	<div class="mx-10">
 		<form
