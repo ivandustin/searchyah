@@ -7,7 +7,7 @@
 	<title>{data.title}</title>
 </svelte:head>
 
-<main class="m-5 font-serif leading-10 text-2xl">
+<main class="m-5 font-serif leading-10 text-2xl mb-[38.2vh]">
 	{#each data.items as item}
 		<p
 			id={item.verse}

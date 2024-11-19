@@ -6,7 +6,7 @@
 	<title>{data.query}</title>
 </svelte:head>
 
-<main class="m-5">
+<main class="m-5 mb-[38.2vh]">
 	{#each data.items as item}
 		<a
 			href={item.href}
