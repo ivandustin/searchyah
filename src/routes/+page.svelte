@@ -8,6 +8,7 @@
 </script>
 
 <svelte:head>
+	<title>Searchyah</title>
 	<meta name="description" content="Search anything in the Bible like Google" />
 </svelte:head>
 
