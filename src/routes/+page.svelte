@@ -9,7 +9,7 @@
 
 <svelte:head>
 	<title>Searchyah</title>
-	<meta name="description" content="Our website offers a powerful and intuitive way to explore the Bible through semantic search, enabling users to find verses and passages based on meaning rather than exact keywords. Powered by a cutting-edge vector search engine, it understands natural language queries and returns contextually relevant results. The site features a carefully edited version of the King James Bible, preserving its literary beauty while enhancing clarity for modern readers. Whether you're studying theology, seeking spiritual guidance, or simply curious, our tool makes scripture more accessible and meaningful than ever before." />
+	<meta name="description" content="Searchyah is a Bible search engine and study tool built around the King James Version (KJV). It helps you quickly recall a verse even when you only remember part of it, find similar verses with related meaning, and explore topics across Scripture. Searchyah returns pure Bible verse results. Under the hood, it uses an OpenAI text embedding model to understand the meaning of your query and performs vector search to match you with the most relevant passages." />
 </svelte:head>
 
 <main class="mx-auto mt-[61.8vh] max-w-screen-md">
