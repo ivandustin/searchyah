@@ -1,4 +1,6 @@
 <script lang="ts">
+	import description from './description.txt?raw';
+
 	let submitted = false;
 
 	function onSubmit(event: any) {
@@ -9,11 +11,11 @@
 
 <svelte:head>
 	<title>Bible Search – Searchyah</title>
-	<meta name="description" content="Searchyah is a Bible search engine and study tool built around the King James Version (KJV). It helps you quickly recall a verse even when you only remember part of it, find similar verses with related meaning, and explore topics across Scripture. Searchyah returns pure Bible verse results. Under the hood, it uses an OpenAI text embedding model to understand the meaning of your query and performs vector search to match you with the most relevant passages." />
+	<meta name="description" content={description} />
 </svelte:head>
 
-<main class="mx-auto mt-[61.8vh] max-w-screen-md">
-	<div class="mx-10">
+<main class="mx-auto max-w-screen-md min-h-screen flex flex-col justify-between">
+	<div class="mx-10 pt-[61.8vh]">
 		<form
 			class="rounded-[calc(48px/1.618/1.618)] p-3 flex bg-gray-100 dark:bg-gray-700"
 			on:submit={onSubmit}
@@ -70,4 +72,7 @@
 			/>
 		</form>
 	</div>
+	<p class="m-8 text-xs text-center text-gray-500">
+		{description}
+	</p>
 </main>
