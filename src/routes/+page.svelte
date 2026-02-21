@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Searchyah</title>
+	<title>Bible Search Engine – Searchyah</title>
 	<meta name="description" content="Searchyah is a Bible search engine and study tool built around the King James Version (KJV). It helps you quickly recall a verse even when you only remember part of it, find similar verses with related meaning, and explore topics across Scripture. Searchyah returns pure Bible verse results. Under the hood, it uses an OpenAI text embedding model to understand the meaning of your query and performs vector search to match you with the most relevant passages." />
 </svelte:head>
 
