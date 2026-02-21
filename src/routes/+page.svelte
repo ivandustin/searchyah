@@ -14,8 +14,8 @@
 	<meta name="description" content={description} />
 </svelte:head>
 
-<main class="mx-auto max-w-screen-md min-h-screen flex flex-col justify-between">
-	<div class="mx-10 pt-[61.8vh]">
+<main class="mx-auto max-w-screen-md h-dvh flex flex-col justify-between">
+	<div class="mx-10 mt-[calc(61.8dvh-48px)]">
 		<form
 			class="rounded-[calc(48px/1.618/1.618)] p-3 flex bg-gray-100 dark:bg-gray-700"
 			on:submit={onSubmit}
