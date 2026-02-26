@@ -21,4 +21,7 @@
 			</p>
 		{/each}
 	</div>
+	<div class="my-10 mx-5 text-lg">
+		<a href="/" class="text-blue-500 tracking-widest">Back to search</a>
+	</div>
 </main>
